@@ -1,0 +1,174 @@
+/* Main page styling */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 8px 0 0;
+  font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #f2c200;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main layout */
+main {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background-color: white;
+  padding: 25px;
+  border: 2px solid #d9dee5;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.hero div {
+  flex: 1;
+}
+
+.hero img {
+  width: 40%;
+  max-width: 350px;
+  border-radius: 10px;
+  border: 2px solid #d9dee5;
+}
+
+/* Content cards */
+.card {
+  background-color: white;
+  padding: 25px;
+  border: 2px solid #d9dee5;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.card h2,
+.hero h2 {
+  color: #003366;
+  margin-top: 0;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #c8cdd3;
+  padding: 12px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6f8;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 18px;
+  padding: 12px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0055aa;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+}
